@@ -11,6 +11,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency    'refinerycms', '~> 2.0.0'
 
+  s.add_development_dependency 'refinerycms-testing', '~> 2.0.0'
+  s.add_development_dependency 'combustion', '~> 0.3.0'
+  s.add_development_dependency 'sqlite3'
+
   s.files             = [
     'app',
     'app/controllers',
@@ -33,18 +37,34 @@ Gem::Specification.new do |s|
     'config/locales/bg.yml',
     'config/locales/en.yml',
     'config/routes.rb',
+    'config.ru',
     'db',
     'db/migrate',
     'db/migrate/01_create_search_page.rb',
     'db/seeds',
     'db/seeds/refinerycms_search.rb',
+    'Gemfile',
+    'Gemfile.lock',
     'lib',
     'lib/gemspec.rb',
     'lib/generators',
     'lib/generators/search_generator.rb',
     'lib/refinerycms-search.rb',
     'readme.md',
-    'refinerycms-search.gemspec'
+    'refinerycms-search.gemspec',
+    'spec',
+    'spec/internal',
+    'spec/internal/config',
+    'spec/internal/config/database.yml',
+    'spec/internal/config/routes.rb',
+    'spec/internal/db',
+    'spec/internal/db/schema.rb',
+    'spec/internal/public',
+    'spec/internal/public/favicon.ico',
+    'spec/models',
+    'spec/models/refinery',
+    'spec/models/refinery/search_engine_spec.rb',
+    'spec/spec_helper.rb'
   ]
   s.require_path = 'lib'
 end

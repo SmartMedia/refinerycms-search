@@ -19,6 +19,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency    'refinerycms', '~> 2.0.0'
 
+  s.add_development_dependency 'refinerycms-testing', '~> 2.0.0'
+  s.add_development_dependency 'combustion', '~> 0.3.0'
+  s.add_development_dependency 'sqlite3'
+
   s.files             = [
     '#{files.join("',\n    '")}'
   ]
