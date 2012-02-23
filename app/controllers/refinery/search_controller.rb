@@ -1,9 +1,9 @@
 module Refinery
   class SearchController < ::ApplicationController
 
-  	# Display search results given the query supplied
+    # Display search results given the query supplied
     def show
-      @results = Refinery::SearchEngine.search(params[:query], params[:page])
+      @results = Refinery::SearchEngine.search('^'+params[:query].to_s+'^', params[:page])
 
       present(@page = Refinery::Page.find_by_link_url("/search"))
     end
