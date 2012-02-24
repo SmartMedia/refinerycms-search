@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-search}
   s.version           = %q{2.0.0}
-  s.date              = %q{2011-10-31}
+  s.date              = %q{2012-02-24}
   s.summary           = %q{Extra search handling for Refinery CMS}
   s.description       = %q{Provides extra functionality for searching your frontend website using Refinery CMS.}
   s.homepage          = %q{http://refinerycms.com}
@@ -36,17 +36,24 @@ Gem::Specification.new do |s|
     'db',
     'db/migrate',
     'db/migrate/01_create_search_page.rb',
-    'db/seeds',
-    'db/seeds/refinerycms_search.rb',
+    'db/seeds.rb',
     'lib',
     'lib/gemspec.rb',
     'lib/generators',
     'lib/generators/refinery',
     'lib/generators/refinery/search_generator.rb',
-    'lib/refinerycms-search.rb',
+    'lib/generators/refinery/templates',
+    'lib/generators/refinery/templates/config',
+    'lib/generators/refinery/templates/config/initializers',
+    'lib/generators/refinery/templates/config/initializers/refinery',
+    'lib/generators/refinery/templates/config/initializers/refinery/search.rb.erb',
+    'lib/refinery',
     'lib/refinery/search',
-    'lib/refinery/search.rb',
+    'lib/refinery/search/configuration.rb',
     'lib/refinery/search/engine.rb',
+    'lib/refinery/search.rb',
+    'lib/refinerycms-search.rb',
+    'Rakefile',
     'readme.md',
     'refinerycms-search.gemspec'
   ]
