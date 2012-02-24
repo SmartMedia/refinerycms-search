@@ -6,6 +6,9 @@ module Refinery
   module Search
     require 'refinery/search/engine'
 
+    # Load configuration last so that everything above is available to it.
+    require 'refinery/search/configuration'
+
     class << self
       attr_writer :root
 

@@ -1,5 +1,10 @@
 module Refinery
   class SearchGenerator < Rails::Generators::Base
+    source_root File.expand_path('../templates', __FILE__)
+
+    def generate_pages_initializer
+      template "config/initializers/refinery/search.rb.erb", File.join(destination_root, "config", "initializers", "refinery", "search.rb")
+    end
 
     def rake_db
       rake("refinery_search:install:migrations")
