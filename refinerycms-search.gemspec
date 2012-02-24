@@ -44,6 +44,9 @@ Gem::Specification.new do |s|
     'lib/generators/refinery',
     'lib/generators/refinery/search_generator.rb',
     'lib/refinerycms-search.rb',
+    'lib/refinery/search',
+    'lib/refinery/search.rb',
+    'lib/refinery/search/engine.rb',
     'readme.md',
     'refinerycms-search.gemspec'
   ]

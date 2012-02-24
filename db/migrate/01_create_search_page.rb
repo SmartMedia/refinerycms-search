@@ -1,7 +1,6 @@
 class CreateSearchPage < ActiveRecord::Migration
 
   def up
-    load(Rails.root.join('db', 'seeds', 'refinerycms_search.rb'))
   end
 
   def down
