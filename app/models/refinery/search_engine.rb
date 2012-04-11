@@ -6,7 +6,7 @@ module Refinery
       results = []
 
       Refinery::Search.searchable_models.each do |model|
-        results << model.find_with_index(query)
+        results << model.find_with_index(query.to_ascii)
       end if query.present?
 
       results.flatten
